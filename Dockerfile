@@ -14,6 +14,6 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 ADD . /app
 ADD ./templates /app/templates
-EXPOSE 5000
+EXPOSE 8080
 ENTRYPOINT ["python3"]
 CMD [ "app.py" ]
